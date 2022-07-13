@@ -1,8 +1,9 @@
 package com.example.livro;
 
+import com.example.livro.Model.Livro;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class Lista {
     List<Livro> listalivros;

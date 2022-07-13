@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.example.livro.Model.Livro;
+
 public class LivroAdpter extends BaseAdapter {
 
     Activity maActivity;

@@ -19,7 +19,7 @@ public class LivroDAO {
     private final static List<Livro> livros = new ArrayList<>();
 
     public void salva(Livro livro) {
-        db.collection("carros")
+        db.collection("livros")
                 .add(livro)
                 .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override

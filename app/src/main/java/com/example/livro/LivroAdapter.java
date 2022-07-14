@@ -17,17 +17,16 @@ import java.util.List;
 public class LivroAdapter extends RecyclerView.Adapter<com.example.livro.livroViewHolder> {
     private Context context;
     private List<Livro> livros;
-    private intefaceLivro interfacelicro;
+    private interfaceLivro interfacelicro;
     private livroViewHolder livroViewHolder;
 
-    public LivroAdapter(Context context, List<Livro> livros, intefaceLivro livro) {
+    public LivroAdapter(Context context, List<Livro> livros, interfaceLivro livro) {
         this.context = context;
         this.livros = livros;
         this.interfacelicro = livro;
     }
-    public LivroAdapter() {
 
-    }
+
 
     @NonNull
     @Override

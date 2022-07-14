@@ -16,7 +16,7 @@ import com.example.livro.LivroAdapter;
 import com.example.livro.Model.Livro;
 
 
-public class form_livro extends AppCompatActivity {
+public class formlivro extends AppCompatActivity {
     private EditText nome,valor;
     private final LivroDAO dao = new LivroDAO();
     private LivroAdapter adapter = new LivroAdapter();
@@ -39,7 +39,7 @@ public class form_livro extends AppCompatActivity {
         btnCacelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(form_livro.this,list.class);
+                Intent intent = new Intent(formlivro.this,list.class);
                 startActivity(intent);
             }
         });
@@ -49,15 +49,15 @@ public class form_livro extends AppCompatActivity {
         botaoSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String modelo1 = nome.getText().toString();
-                String cor1 = valor.getText().toString();
+                String nome1 = nome.getText().toString();
+                String valor1 = valor.getText().toString();
 
-                ValidandoCampos(modelo1,cor1);
+                ValidandoCampos(nome1,valor1);
 
 
             }
-            private void ValidandoCampos(String modelo1, String cor1){
-                    Livro livro = criaCarro();
+            private void ValidandoCampos(String nome, String valor){
+                    Livro livro = criaLivro();
                     salva(livro);
             }
         });
@@ -65,14 +65,14 @@ public class form_livro extends AppCompatActivity {
     private void salva(Livro livro) {
         dao.salva(livro);
         adapter.notifyDataSetChanged();
-        Intent intent = new Intent(form_livro.this, list.class);
+        Intent intent = new Intent(formlivro.this, list.class);
         startActivity(intent);
     }
-    private Livro criaCarro() {
+    private Livro criaLivro() {
         String id ="";
-        String modeloCar = nome.getText().toString();
-        String corCar = valor.getText().toString();
-        return new Livro(id,modeloCar,corCar);
+        String nome1 = nome.getText().toString();
+        String valor1 = valor.getText().toString();
+        return new Livro(id,nome1,valor1);
 
     }
 }

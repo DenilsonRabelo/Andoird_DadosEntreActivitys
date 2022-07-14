@@ -13,7 +13,7 @@ import com.example.livro.LivroAdapter;
 import com.example.livro.Model.Livro;
 import com.example.livro.R;
 
-public class editar_livro extends AppCompatActivity {
+public class editarlivro extends AppCompatActivity {
     private EditText nome, valor;
     private Button btnAt, btnCacelar;
     private LivroDAO dao = new LivroDAO();
@@ -39,7 +39,7 @@ public class editar_livro extends AppCompatActivity {
         btnCacelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(editar_livro.this, list.class);
+                Intent intent = new Intent(editarlivro.this, list.class);
                 startActivity(intent);
             }
         });
@@ -51,7 +51,7 @@ public class editar_livro extends AppCompatActivity {
         btnAt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(editar_livro.this, list.class);
+                Intent intent = new Intent(editarlivro.this, list.class);
                 startActivity(intent);
             }
         });

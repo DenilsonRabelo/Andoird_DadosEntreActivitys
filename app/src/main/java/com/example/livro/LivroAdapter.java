@@ -26,6 +26,9 @@ public class LivroAdapter extends RecyclerView.Adapter<com.example.livro.livroVi
         this.interfacelicro = livro;
     }
 
+    public LivroAdapter() {
+
+    }
 
 
     @NonNull

@@ -40,7 +40,7 @@ public class list extends AppCompatActivity implements interfaceLivro {
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                abrirFormularioCar();
+                abrirFormulario();
             }
         });
     }
@@ -54,7 +54,7 @@ public class list extends AppCompatActivity implements interfaceLivro {
         recyclerView.setAdapter(adapter);
 
     }
-    private void abrirFormularioCar() {
+    private void abrirFormulario() {
         Intent intent = new Intent(list.this, formlivro.class);
         startActivity(intent);
     }
@@ -71,7 +71,7 @@ public class list extends AppCompatActivity implements interfaceLivro {
 
 
     public void btnEdit(int i, Livro livro) {
-        Intent intent = new Intent(list.this, editar_livro.class);
+        Intent intent = new Intent(list.this, editarlivro.class);
         intent.putExtra("id",i);
         intent.putExtra("livro", (Parcelable) livro);
         startActivity(intent);

@@ -40,7 +40,7 @@ public class editar_livro extends AppCompatActivity {
         btnCacelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(EdtCar.this, list.class);
+                Intent intent = new Intent(.this, list.class);
                 startActivity(intent);
             }
         });
@@ -52,7 +52,7 @@ public class editar_livro extends AppCompatActivity {
         btnAt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(EdtCar.this, list.class);
+                Intent intent = new Intent(.this, list.class);
                 startActivity(intent);
             }
         });

@@ -5,8 +5,13 @@
       <map>
         <entry key="..\:/Users/Denilson/AndroidStudioProjects/Livro/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1785" />
         <entry key="..\:/Users/Denilson/AndroidStudioProjects/Livro/app/src/main/res/layout/activity2.xml" value="0.14130434782608695" />
-        <entry key="..\:/Users/Denilson/AndroidStudioProjects/Livro/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Users/Denilson/AndroidStudioProjects/Livro/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/Denilson/AndroidStudioProjects/Livro/app/src/main/res/layout/activity_main2.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/Denilson/AndroidStudioProjects/Livro/app/src/main/res/layout/activity_main4.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/Denilson/AndroidStudioProjects/Livro/app/src/main/res/layout/editar_livro.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/Denilson/AndroidStudioProjects/Livro/app/src/main/res/layout/formulario_livro.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/Denilson/AndroidStudioProjects/Livro/app/src/main/res/layout/lista_livros.xml" value="0.22" />
+        <entry key="..\:/Users/Denilson/AndroidStudioProjects/Livro/app/src/main/res/layout/livro.xml" value="0.33" />
         <entry key="..\:/Users/Denilson/AndroidStudioProjects/Livro/app/src/main/res/layout/uma_lista.xml" value="0.2" />
         <entry key="..\:/Users/Denilson/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.14130434782608695" />
       </map>

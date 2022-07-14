@@ -39,10 +39,10 @@ public class LivroAdpter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         View uma_lista;
         LayoutInflater inflater = (LayoutInflater) maActivity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        uma_lista = inflater.inflate(R.layout.uma_lista, viewGroup, false);
-        TextView tv_nome = uma_lista.findViewById(R.id.tv_nome);
-        TextView tv_valor = uma_lista.findViewById(R.id.tv_valor);
-        TextView tv_id  = uma_lista.findViewById(R.id.tv_id);
+        uma_lista = inflater.inflate(R.layout., viewGroup, false);
+        TextView tv_nome = uma_lista.findViewById(R.id.);
+        TextView tv_valor = uma_lista.findViewById(R.id.);
+        TextView tv_id  = uma_lista.findViewById(R.id.);
         Livro p = this.getItem(i);
         tv_nome.setText(p.getNome());
         tv_valor.setText(p.getValor());

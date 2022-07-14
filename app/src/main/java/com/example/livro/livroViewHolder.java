@@ -12,9 +12,9 @@ public class livroViewHolder  extends RecyclerView.ViewHolder{
     Button deletar;
     public livroViewHolder(@NonNull View itemView) {
         super(itemView);
-        nome = itemView.findViewById(R.id.no);
-        valor = itemView.findViewById(R.id.cor);
-        edit = itemView.findViewById(R.id.btn_edit);
-        delete = itemView.findViewById(R.id.btn_apagar);
+        nome = itemView.findViewById(R.id.nome);
+        valor = itemView.findViewById(R.id.valor);
+        editar = itemView.findViewById(R.id.btn_edit);
+        deletar = itemView.findViewById(R.id.btn_apagar);
     }
 }

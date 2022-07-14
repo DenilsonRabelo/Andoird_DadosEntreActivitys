@@ -5,12 +5,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.livro.DAO.LivroDAO;
-import com.example.livro.LivroAdpter;
+import com.example.livro.LivroAdapter;
 import com.example.livro.Model.Livro;
 import com.example.livro.R;
 
@@ -18,7 +17,7 @@ public class editar_livro extends AppCompatActivity {
     private EditText nome, valor;
     private Button btnAt, btnCacelar;
     private LivroDAO dao = new LivroDAO();
-    private LivroAdpter adapter = new LivroAdpter();
+    private LivroAdapter adapter = new LivroAdapter();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +39,7 @@ public class editar_livro extends AppCompatActivity {
         btnCacelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(.this, list.class);
+                Intent intent = new Intent(editar_livro.this, list.class);
                 startActivity(intent);
             }
         });
@@ -52,7 +51,7 @@ public class editar_livro extends AppCompatActivity {
         btnAt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(.this, list.class);
+                Intent intent = new Intent(editar_livro.this, list.class);
                 startActivity(intent);
             }
         });
